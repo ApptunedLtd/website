@@ -2,10 +2,34 @@
   "name": "www.apptuned.com",
   "version": "0.0.0",
   "private": true,
-  "author" : "Davies",
-  "scripts": {
-    "start": "node ./bin/www"
+   "author": {
+    "name": "Davies Ray",
+    "email": "davies@apptuned.co"
   },
+  "description": "This is an all round directory",
+  "contributors": [
+    {
+      "name": "Davies Ray",
+      "email": "davies@apptuned.co"
+    },
+    {
+        "name" : "Davies Ray",
+        "email" : "daviesray.ornyx@gmail.com"
+    }
+  ],
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/ApptunedLtd/website.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "./server.js",
+  "keywords": [
+    "Apptuned",
+    "Application Development",
+    "Node"
+  ],
   "dependencies": {
     "express": "~4.9.0",
     "body-parser": "~1.8.1",
@@ -14,6 +38,12 @@
     "serve-favicon": "~2.1.3",
     "debug": "~2.0.0",
     "ejs": "~0.8.5",
-    "nodemailer" : "*"
+    "nodemailer" : "*",
+    "mongodb" : "*"
+  },
+  "noAnalyze": true,
+  "license": "Apache",
+  "engines": {
+    "node": "0.10.x"
   }
 }
