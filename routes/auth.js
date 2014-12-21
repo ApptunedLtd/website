@@ -28,4 +28,4 @@ var authRoutes = {
 }
 
 
-module.exports = router;
+module.exports = authRoutes;
